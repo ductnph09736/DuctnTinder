@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Tinder Gray NGOCDUC</title>
+    <link rel="shortcut icon" type="image/png" href="logofooterx2-1.png"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index1.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .testimonial{
+            background: #fff;
+            text-align: center;
+            border: gray solid 1px;
+            padding: 30px 30px 60px;
+            margin: 0 15px 5px;
+            position: relative;
+        }
+        .testimonial:before,
+        .testimonial:after{
+            content: "";
+            border-top: 80px solid #fff;
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+        }
+        .testimonial:after{
+            border-right: none;
+
+            left: auto;
+            right: 0;
+        }
+        .testimonial .icon{
+            display: inline-block;
+            font-size: 80px;
+            color: gray;
+            margin-bottom: 20px;
+            opacity: 0.6;
+         width: 800px;
+        }
+        .testimonial .description{
+            font-size: 16px;
+            color: #777;
+            text-align: justify;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            letter-spacing: -1px;
+        }
+        .testimonial .testimonial-content{
+            width: 100%;
+            position: absolute;
+            left: 0;
+        }
+        .testimonial .pic{
+            display: inline-block;
+            border: 6px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 2px 2px #daad86;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+        }
+        .testimonial .post{
+            display: block;
+            font-size: 14px;
+            color: #1c1f23;
+        }
+        .testimonial .pic img{
+            width: 100%;
+            height: auto;
+        }
+        .testimonial .title{
+            font-size: 15px;
+            font-weight: bold;
+
+            color: #000000;
+            text-transform: capitalize;
+            margin-right: 150px;
+            margin-left: 31px;
+            padding-bottom: 10px;
+        }
+
+        .owl-theme .owl-controls{
+            margin-top: 60px;
+        }
+        .owl-theme .owl-controls .owl-page span{
+            width: 32px;
+            height: 10px;
+            background: #fff;
+            border: 2px solid #bd986b;
+            margin: 5px;
+            opacity: 1;
+            margin-top: 15px;
+        }
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span{
+            background: #ffd9b8;
+            border-color: #fff;
+        }
+        .pic img{
+            width: 100px !important;
+            height: 50px;
+        }
+        #user, #pass{
+            background-color: white;
+            color: black;
+        }
+    </style>
+
+<body>
+<div class="container-fluid">
+  <nav class="navbar sticky-top">
+     <a href="index.html"> <img src="logofooterx2-1.png" width="100px" ></a>
+      <a href="#signin" type="button" class="btn btn-primary" data-bs-toggle="modal" >Đăng Nhập</a>
+  </nav>
+    <div class="modal fade " id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content"  style="background-color: gray">
+                <div class="modal-header align-items-center">
+                    <img src="logofooterx2-1.png"  width="100px" class="logo">
+                    <h5 class="modal-title" id="staticBackdropLabel-1">ĐĂNG NHẬP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email của bạn</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text" style="color: white">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+
+                    </form>
+                    <a href="login.html"><button  class="btn btn-primary">ĐĂNG NHẬP</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center align-items-center ">
+
+
+        <a   id= "blur1"  href="#signup" type="button" class="btn btn-primary" data-bs-toggle="modal" style="margin-top: 50px">Đăng Ký</a>
+
+        <div class="modal fade " id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" >
+                <div class="modal-content"  style="background-color: gray">
+                    <div class="modal-header align-items-center">
+                        <img src="logofooterx2-1.png"  width="100px" class="logo">
+                        <h5 class="modal-title" id="staticBackdropLabel-1">Đăng Ký</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email của bạn</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" required>
+                                <div id="emailHelp" class="form-text" style="color: white">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Nhập lại mật khẩu</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                        </form>
+                        <a href="login.html"><button  class="btn btn-primary">ĐĂNG NHẬP</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row" id="content">
+            <div class="col-md-12">
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <h3 class="title" style="margin-top: 30px;border-bottom: gray solid 1px">Trương Quang Long</h3>
+                        </div>
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                        Tôi là một con người hướng nội và ít nói cho nên tôi rất ít có bạn bè. Khoảng thời gian đại học của tôi rất trầm cảm. Nhưng từ khi có ShynRii tôi được rất nhiều người kết bạn và quan tâm. Điều đó đã thay dổi tôi rất nhiều, khiến tôi trở thành một con người khác. .Tôi cảm ơn đội ngũ đã tạo nên ShynRii vì nó thực sự rất có ích. </p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <h3 class="title" style="margin-top: 30px;border-bottom: gray solid 1px">Trương Quang Long</h3>
+                        </div>
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                        Nhờ có ShynRii tôi đã tìm thấy tình yêu của đời mình và tôi sắp kết hôn. Sau khi trả qua vài buổi gặp gỡ và hẹn hò. Tôi đã tình cờ gặp anh ấy. Sau khi đọc hồ sơ của anh ấy , tôi đã quyết định người này sẽ là bạn đời. Sau khi trò chuyện một thời gian, chúng tôi tiến tới buổi hẹn đầu tiên và tôi biết chắc trong cô ấy có một điều gì đó..."                       </p>
+
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <h3 class="title" style="margin-top: 30px;border-bottom: gray solid 1px">Trương Quang Long</h3>
+                        </div>
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                        Tôi đã nghĩ sẽ không có gì nghiêm túc khi bắt đầu từ ShynRii. Nhưng cho đến một ngày tôi vô tình tìm thấy cố gái của đời mình trên ứng dụng. Tôi đã dũng cảm tiến tới và làm quen, nhờ vậy chúng tôi đã là của nhau sau một khoảng thời gian. Ngoài cô ấy ra, tôi còn rất nhiều bạn khác vì cộng đồng ShynRii rất lớn.</p>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <h3 class="title" style="margin-top: 30px;border-bottom: gray solid 1px">Trương Quang Long</h3>
+                        </div>
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                        Cảm ơn các bạn vì đã tạo điều kiện để tôi có thể gặp được tri kỷ của đời mình. Năm phút sau khi bắt đầu cuộc trò chuyện đầu tiên của chúng tôi. Cô ấy, người hiện tại là bà xã của tôi đã nói về chuyện chúng tôi sẽ có một đám cưới tuyệt với đến nhường nào. Một lần nữa xin cảm ơn mọi người. Chúc mọi người thành công.</p>
+                         </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <h3 class="title" style="margin-top: 30px;border-bottom: gray solid 1px">Trương Quang Long</h3>
+                        </div>
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                        Sau vài tháng hẹn nhau, mối quan hệ của chúng tôi đã chuyển tới một ngã rẽ và chúng tôi quyết định ngưng cái trò mèo vờn chuột này. Tôi đã yêu cô ấy nhưng cứ sợ chuyện tình này chẳng đi tới đâu. Nhưng 9 tháng sau, chúng tôi dính nhau như sam vậy. Thật là tuyệt vời !!. Chúc mọi người tốt lành !!</p>
+                         </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <h3 class="title" style="margin-top: 30px;border-bottom: gray solid 1px">Trương Quang Long</h3>
+                        </div>
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                         Tôi vừa chấm dứt một mối quan hệ còn cô ấy thì vừa có mối quan hệ mới vì vậy cả hai chúng tôi khá là nhút nhát và thận trọng để tiến từng bước một. Cả hai chúng tôi đều rất nhanh và nhận ra đã tìm được mảnh ghép còn lại của cuôc đời mình ở tương lai. Tôi đã rất vui không thể tả. Thật tuyệt vời phải không nào ?
+                        </p>
+                         </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <h3 class="title" style="margin-top: 30px;border-bottom: gray solid 1px">Trương Quang Long</h3>
+                        </div>
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                            Mọi người thường hay nói với tôi các mối quan hệ trên đây không thực sự nghiêm túc, tôi đã rất lo lắng. Nhưng sau khi làm quen với cô ấy trên đây, tôi thực sữ đã thay đổi say nghĩ đó. Tôi và cô ấy đã tiến thêm bước nữa. Tôi tin rằng mọi người cũng sẽ tìm được mối quan hệ nghiêm túc ở trên cộng đồng này!!
+                        </p>
+                         </div>
+                </div>
+            </div>
+        <hr>
+
+        <footer >
+
+            <div class="container p-4 text-center ">
+
+<hr>
+
+                <section class="mb-4 ">
+                    <h3>Tải Ứng Dụng Về Điện Thoại</h3>
+                    <div class="page-content page-container" id="page-content">
+                        <div class="padding">
+                            <div class="row container d-flex justify-content-center">
+                                <div class="template-demo mt-2">
+                                    <button class="btn btn-outline-dark btn-icon-text"> <i class="fa fa-apple btn-icon-prepend mdi-36px"></i> <span class="d-inline-block text-left"> <small class="font-weight-light d-block"></small> App Store </span> </button>
+                                    <button class="btn btn-outline-dark btn-icon-text"> <i class="fa fa-android btn-icon-prepend mdi-36px"></i> <span class="d-inline-block text-left"> <small class="font-weight-light d-block"></small> Google Play </span> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<hr>
+                <section class="text-start">
+                    <div class="row ">
+                        <div class="col-lg-2 col-md-5 mb-6 mb-md-3">
+                            <h5 class="text-uppercase">AN TOÀN</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text">Quy tắc công đồng</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Lời khuyên về an toàn</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">An toàn và chính sách</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Bảo mật</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">PHÁP LÝ</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text">Quyền riêng tư</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Điều khoản</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Chính sách Cookie</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Sỡ hữu trí tuệ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">NGHỀ NGHIỆP</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text">Cổng thông tin nghề nghệp</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Blog Công nghệ</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Mạng xã hội</h5>
+
+                            <section class="mb-4">
+                                <a class="btn btn-outline-light gbtn-floatin m-1" href="#!" role="button" style="width: 50px; height: 50px; color: black;background-color: white"
+                                ><i class="fab fa-facebook-f"></i
+                                ></a>
+                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"style="width: 50px; height: 50px;color: black;background-color: white"
+                                ><i class="fab fa-twitter"></i
+                                ></a>
+                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"style="width: 50px; height: 50px;color: black;background-color: white"
+                                ><i class="fab fa-google"></i
+                                ></a>
+                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"style="width: 50px; height: 50px;color: black;background-color: white"
+                                ><i class="fab fa-instagram"></i
+                                ></a>
+                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"style="width: 50px; height: 50px;color: black;background-color: white"
+                                ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"style="width: 50px; height: 50px;color: black;background-color: white"
+                                ><i class="fab fa-github"></i
+                                ></a>
+                            </section>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">KHÁC</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text">Phòng Báo Chí</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Liên hệ</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Gói thuê bao đăng ký</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Hỗ trợ</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text">Mã khuyễn mãi</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <p style="color: gray;font-size: 12px">Single people, listen up: If you’re looking for love, want to start dating, or just keep it casual, you need to be on Tinder. With over 55 billion matches made, it’s the place to be to meet your next best match. Let’s be real, the dating landscape looks very different today, as most people are meeting online. With Tinder, the world’s most popular free dating app, you have millions of other single people at your fingertips and they’re all ready to meet someone like you. Whether you’re straight or in the LGBTQIA community, Tinder’s here to bring you all the sparks.
+                       There really is something for everyone on Tinder. Want to get into a relationship? You got it. Trying to find some new friends? Say no more. New kid on campus and looking to make the most of your college experience? Tinder U’s got you covered. Tinder isn’t your average dating site — it’s the most diverse dating app, where adults of all backgrounds and experiences are invited to make connections, memories, and everything in between.</p>
+                </section>
+            </div>
+        </footer>
+        <div class=" text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Design:
+            <p  href="#">Clone Tinder Ductnph09736</p>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#testimonial-slider").owlCarousel({
+                items:3,
+                itemsDesktop:[1000,3],
+                itemsDesktopSmall:[979,2],
+                itemsTablet:[768,2],
+                itemsMobile:[650,1],
+                pagination:true,
+                autoPlay:true
+            });
+        });
+        var pxlCount = 0
+        $(window).on('scroll', function () {
+            pxlCount = $(document).scrollTop()/10;
+            $('p.pxlCount > span').text(pxlCount);
+            $("#blur,#blur1").css({"-webkit-filter": "blur("+pxlCount+"px)","-moz-filter": "blur("+pxlCount+"px)","filter": "blur("+pxlCount+"px)" })
+        });
+    </script>
+
+</body>
+</html>

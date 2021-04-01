@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="login.css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+		<script src="js/bootstrap.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="side">
+				<div class="header">
+					<div class="avatar">
+						<img src="https://randomuser.me/api/portraits/women/64.jpg" alt="" />
+					</div>
+					<div class="title">Meu perfil</div>
+				</div>
+				<div class="menu">
+					<ul>
+
+						<li class="active">Mensagens</li>
+						<li><a href="#plus" class="fas fa-plus" class="btn btn-primary" data-bs-toggle="modal"></a></li>
+						<div class="modal fade " id="plus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" style="max-width: 800px">
+							<div class="modal-content" style="background-color: gray">
+								<div class="modal-header align-items-center">
+									<img src="logofooterx2-1.png"  width="100px" class="logo-1">
+									<h5 class="modal-title" id="staticBackdropLabel-2" style="margin-left: 20px">ĐĂNG KÝ</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="sign-up-htm">
+
+										<form class="was-validated">
+											<div class="group">
+												<label for="user" class="label">Họ Và Tên</label>
+												<input id="fullname" type="text" class="form-control is-invalid" required>
+
+											</div>
+											<div class="group">
+												<label for="user" class="label">Ngày Sinh</label>
+												<input id="birthday" type="date" class="form-control is-invalid" required>
+
+											</div>
+											<div class="group">
+												<label for="user" class="label">Email hoặc số điện thoại</label>
+												<input id="email" type="email" class="form-control is-invalid" required>
+											</div>
+											<div class="group">
+												<label for="user" class="label">Giới Tính</label>
+												<div class="form-check">
+
+													<input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+													<label class="form-check-label" for="validationFormCheck2">Nam</label>
+												</div>
+												<div class="form-check group">
+													<input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+													<label class="form-check-label" for="validationFormCheck3">Nữ</label>
+												</div>
+											</div>
+											<div class="group">
+												<label for="validationTextarea" class="label">Giới Thiệu Ngắn</label>
+												<textarea class="form-control is-invalid" id="validationTextarea"   required></textarea>
+											</div>
+											<div class="group row">
+												<label for="validationTextarea" class="label">Sở Thích</label>
+												<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+													<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+													<label class="btn btn-outline-dark" for="btncheck1">Checkbox 1</label>
+
+													<input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+													<label class="btn btn-outline-dark" for="btncheck2">Checkbox 2</label>
+
+													<input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" >
+													<label class="btn btn-outline-dark" for="btncheck3" >Checkbox 3</label>
+
+												</div>
+												<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+													<input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+													<label class="btn btn-outline-dark" for="btncheck4">Checkbox 1</label>
+
+													<input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+													<label class="btn btn-outline-dark" for="btncheck5">Checkbox 2</label>
+
+													<input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off" >
+													<label class="btn btn-outline-dark " for="btncheck6" >Checkbox 3</label>
+
+												</div>
+												<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+													<input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+													<label class="btn btn-outline-dark" for="btncheck7">Checkbox 1</label>
+
+													<input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+													<label class="btn btn-outline-dark" for="btncheck8">Checkbox 2</label>
+
+													<input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off" >
+													<label class="btn btn-outline-dark" for="btncheck9" >Checkbox 3</label>
+
+												</div>
+											</div>
+
+											<div class="group">
+												<label for="validationTextarea" class="label">Ảnh Của Bạn</label>
+												<input type="file" class="form-control" aria-label="file example" required>
+											</div>
+											<div class="form-check group">
+												<input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+												<label class="form-check-label" for="validationFormCheck1">Đồng Ý</label>
+												<div class="invalid-feedback">Bạn Có Đồng Ý Với Tất Cả Điều Khoảng Của Công Ty Về Ứng Dụng Không?</div>
+											</div>
+										</form>
+										<div class="hr"></div>
+									</div>
+									<div class="modal-footer row">
+										<button type="button" class="btn" data-bs-dismiss="modal">Thoát</button>
+										<button type="button" class="btn">Đăng Nhập</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+				</div>
+					</ul>
+				</div>
+				<div class="messages">
+					<div class="avatar">
+						<img src="https://randomuser.me/api/portraits/women/38.jpg" alt="" />
+					</div>
+					<div class="message">
+						<div class="user">Caroline</div>
+						<div class="text">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+					</div>
+				</div>
+				<div class="messages">
+					<div class="avatar">
+						<img src="https://randomuser.me/api/portraits/women/39.jpg" alt="" />
+					</div>
+					<div class="message">
+						<div class="user">Caroline</div>
+						<div class="text">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+					</div>
+				</div>
+				<div class="messages">
+					<div class="avatar">
+						<img src="https://randomuser.me/api/portraits/women/40.jpg" alt="" />
+					</div>
+					<div class="message">
+						<div class="user">Caroline</div>
+						<div class="text">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+					</div>
+				</div>
+				<div class="messages">
+					<div class="avatar">
+						<img src="https://randomuser.me/api/portraits/women/41.jpg" alt="" />
+					</div>
+					<div class="message">
+						<div class="user">Caroline</div>
+						<div class="text">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+					</div>
+				</div>
+				<div class="messages">
+					<div class="avatar">
+						<img src="https://randomuser.me/api/portraits/women/42.jpg" alt="" />
+					</div>
+					<div class="message">
+						<div class="user">Caroline</div>
+						<div class="text">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="card">
+					<div class="user">
+						<img
+							class="user"
+							src="https://images.unsplash.com/photo-1532910404247-7ee9488d7292?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
+							alt=""
+						/>
+						<div class="profile">
+							<div class="name">Rafaela <span>20</span></div>
+							<div class="local">
+								<i class="fas fa-map-marker-alt"></i>
+								<span>a 20 quilômetros daqui</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="buttons">
+					<div class="no">
+						<i class="fas fa-times"></i>
+					</div>
+					<div class="star">
+						<i class="fas fa-star fa"></i>
+					</div>
+					<div class="heart">
+						<i class="fas fa-heart"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+<
