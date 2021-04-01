@@ -7,6 +7,6 @@ var server = http.Server(app);
 
 app.use(express.static('client'));
 
-server.listener(PORT, function (){
+server.listen(PORT, function (){
     console.log('NgocDuc is Running');
 })
